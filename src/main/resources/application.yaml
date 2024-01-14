@@ -13,9 +13,9 @@ spring:
           enabled: true
       routes:
         - id: admin-service
-          uri: lb://ADMIN-SERVICE
+          uri: lb://API-SERVICE
           predicates:
-            - Path=/admin-service/**
+            - Path=/api-service/**
         - id: ui-route
           uri: ${UI_URI}
           predicates:
