@@ -15,10 +15,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: admin-service
-          uri: lb://ADMIN-SERVICE
+        - id: api-service
+          uri: dock
           predicates:
-            - Path=/admin-service/**
+            - Path=/api/**
         - id: ui-route
           uri: http://localhost:8085
           predicates:
